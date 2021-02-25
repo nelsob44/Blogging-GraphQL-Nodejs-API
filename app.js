@@ -95,7 +95,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose.connect(
-    'mongodb+srv://adminNelson:Mi201992@cluster0-lzst1.mongodb.net/messages?retryWrites=true&w=majority'
+    'mongodb+srv://adminNelson:<PASSWORD>@cluster0-lzst1.mongodb.net/messages?retryWrites=true&w=majority'
 )
 .then(result => {
     app.listen(8080);   
